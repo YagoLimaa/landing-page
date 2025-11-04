@@ -1,12 +1,26 @@
-const express = require('express');
-const path = require('path');
-const axios = require('axios'); // Adicionado axios
+import express from 'express';
+import path from 'path';
+import axios from 'axios';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
 
 // Middlewares
-app.use(express.json()); // Adicionado para parsear JSON
+// Enable CORS for all routes
+app.use((req, res, next) => {
+  // Em produção, substitua '*' pelo domínio do seu frontend para mais segurança
+  res.setHeader('Access-Control-Allow-Origin', '*'); 
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
