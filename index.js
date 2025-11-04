@@ -20,7 +20,7 @@ app.post('/contact', async (req, res) => {
   const { name, email, phone, message } = req.body;
 
   // IMPORTANTE: Substitua pela URL do seu webhook do n8n
-  const n8nWebhookUrl = 'http://localhost:5678/webhook-test/878c59ec-2db4-483a-8156-4ebf0b93947b';
+  const n8nWebhookUrl = 'http://localhost:5678/webhook/878c59ec-2db4-483a-8156-4ebf0b93947b';
 
   try {
     // Envia os dados para o n8n
@@ -32,6 +32,8 @@ app.post('/contact', async (req, res) => {
     });
 
     console.log('Form data sent to n8n successfully.');
+    console.log(name,email,phone,message);
+    
     res.status(200).send({ message: 'Mensagem enviada com sucesso!' });
 
   } catch (error) {
