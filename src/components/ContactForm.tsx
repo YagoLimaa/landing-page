@@ -50,8 +50,8 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Entre em Contato</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Entre em Contato</h2>
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
               Estamos aqui para ouvir você. Envie uma mensagem e retornaremos o mais breve possível.
             </p>
           </div>

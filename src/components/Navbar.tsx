@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,6 +65,9 @@ const Navbar = () => {
               </Button>
             </li>
           </ul>
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
         </div>
       </div>
     </nav>

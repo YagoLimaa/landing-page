@@ -13,20 +13,20 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-balance leading-tight">
+          <h1 className="text-4xl md:text-7xl font-bold text-balance leading-tight">
             Encontre o seu{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               equilíbrio
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-balance">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
             Cuidar da mente é cuidar da vida. Oferecemos um caminho para uma vida mais plena e saudável.
           </p>
           <div className="pt-4">
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 shadow-medium hover:shadow-hover transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 shadow-medium hover:shadow-hover transition-all duration-300"
             >
               Agende uma Conversa
             </Button>

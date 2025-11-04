@@ -9,10 +9,10 @@ import {
 
 const BackgroundCarousel = () => {
   const images = [
-    "/public/image1.png",
-    "/public/imagem2.png",
-    "/public/imagem3.png",
-    "/public/imagem4.png"
+    "/image1.png",
+    "/imagem2.avif",
+    "/imagem3.jpg",
+    "/imagem4.jpg"
   ];
 
   return (
@@ -21,9 +21,9 @@ const BackgroundCarousel = () => {
         <CarouselContent className="w-full h-full">
           {images.map((src, index) => (
             <CarouselItem key={index} className="w-full h-full">
-              <div className="p-1 w-full h-full">
+              <div className="w-full h-full">
                 <Card className="w-full h-full overflow-hidden">
-                  <CardContent className="flex items-center justify-center p-0 w-full h-full">
+                  <CardContent className="flex items-start md:items-center justify-center p-0 w-full h-full bg-black pt-16">
                     <img src={src} alt={`Placeholder Image ${index + 1}`} className="w-full h-full object-cover" />
                   </CardContent>
                 </Card>

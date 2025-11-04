@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 animate-fade-in">
             Sobre Nós
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -15,23 +15,23 @@ const About = () => {
               />
             </div>
             <div className="space-y-6 animate-slide-in-right" style={{ opacity: 0 }}>
-              <p className="text-lg text-foreground/80 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
                 A <span className="font-semibold text-primary">Clínica Mente Sã</span> foi fundada com a missão de promover a saúde mental e o bem-estar em todas as fases da vida. Nossa equipe é formada por psicólogos dedicados e experientes, comprometidos em oferecer um atendimento ético, humano e personalizado.
               </p>
-              <p className="text-lg text-foreground/80 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
                 Acreditamos que cada indivíduo é único e, por isso, nossos tratamentos são adaptados às necessidades específicas de cada cliente.
               </p>
-              <div className="pt-4 flex gap-8">
+              <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10+</div>
                   <div className="text-sm text-muted-foreground">Anos de Experiência</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-secondary mb-2">500+</div>
+                  <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">500+</div>
                   <div className="text-sm text-muted-foreground">Pacientes Atendidos</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">98%</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">98%</div>
                   <div className="text-sm text-muted-foreground">Satisfação</div>
                 </div>
               </div>

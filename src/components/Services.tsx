@@ -24,8 +24,8 @@ const Services = () => {
     <section id="services" className="py-24 gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Nossos Serviços</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Nossos Serviços</h2>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
             Oferecemos uma variedade de serviços personalizados para atender às suas necessidades
           </p>
         </div>
