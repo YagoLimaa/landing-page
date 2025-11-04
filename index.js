@@ -46,7 +46,6 @@ app.post('/contact', async (req, res) => {
     });
 
     console.log('Form data sent to n8n successfully.');
-    console.log(name,email,phone,message);
     
     res.status(200).send({ message: 'Mensagem enviada com sucesso!' });
 
